@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en" scroll-behavior="smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zhihongqing</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css
+"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Splide.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.0/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <style>
+      [data-theme] {
+        all: unset;
+      }
+    </style>
+  </head>
+
+  <body class="font-inter">
+    <!-- header start -->
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 w-full bg-white/30 backdrop-blur-md shadow-sm z-50"
+    >
+      <div class="max-w-[1440px] mx-auto">
+        <nav class="flex items-center justify-between w-full py-2 px-4">
+          <div class="flex-1">
+            <a
+              href="./index.html"
+              class="text-lg xl:text-2xl text-space-grotesk font-bold flex items-center gap-2"
+              ><div
+                class="bg-primary p-2 max-w-10 max-h-10 rounded-[10px] inline-flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="fill-white inline-block w-5 h-5"
+                >
+                  <path
+                    d="M17 7C13.5705 7 10.6449 9.15804 9.50734 12.1903L11.3805 12.8927C12.2337 10.6185 14.4278 9 17 9C17.6983 9 18.3687 9.11928 18.992 9.33857C21.3265 10.16 23 12.3846 23 15C23 18.3137 20.3137 21 17 21H7C3.68629 21 1 18.3137 1 15C1 12.3846 2.67346 10.16 5.00804 9.33857C5.0027 9.22639 5 9.11351 5 9C5 5.13401 8.13401 2 12 2C15.242 2 17.9693 4.20399 18.7652 7.19539C18.1973 7.0675 17.6065 7 17 7Z"
+                  ></path>
+                </svg>
+              </div>
+              Cloud</a
+            >
+          </div>
+
+          <!-- Desktop menu -->
+          <ul
+            class="menu menu-horizontal px-1 hidden lg:flex items-center text-dark font-space-grotesk text-lg font-medium space-x-4"
+          >
+            <li>
+              <a
+                href="#banner"
+                class="hover:text-primary transition-colors duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#introduction"
+                class="hover:text-primary transition-colors duration-300"
+                >Introduction</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="hover:text-primary transition-colors duration-300"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="hover:text-primary transition-colors duration-300"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-primary transition-colors duration-300"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                class="bg-primary text-white px-5 py-2 rounded-full border-[2px] border-primary hover:bg-transparent hover:text-primary transition-colors duration-300 ml-4"
+                >Login/Register</a
+              >
+            </li>
+          </ul>
+
+          <!-- Mobile menu button -->
+          <button
+            id="mobile-menu-btn"
+            class="btn btn-ghost btn-square lg:hidden border-0 outline-0 !bg-transparent hover:bg-transparent focus:bg-transparent focus:outline-none"
+            aria-label="Toggle Menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-7 w-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </nav>
+
+        <!-- Mobile menu dropdown -->
+        <div
+          id="mobile-menu"
+          class="hidden bg-white/30 backdrop-blur-md shadow-sm w-full text-center"
+        >
+          <ul
+            class="menu menu-vertical py-3 px-4 space-y-3 text-dark font-space-grotesk text-lg text-center font-medium"
+          >
+            <li>
+              <a
+                href="#banner"
+                class="block hover:text-primary transition-colors duration-300 text-center"
+                >Home</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#introduction"
+                class="block hover:text-primary transition-colors duration-300 text-center"
+                >Introduction</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="block hover:text-primary transition-colors duration-300 text-center"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="block hover:text-primary transition-colors duration-300 text-center"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                class="block hover:text-primary transition-colors duration-300 text-center"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="bg-primary text-white px-5 py-2 rounded-full border-[2px] border-primary hover:bg-transparent hover:text-primary transition-colors duration-300 ml-4"
+                >Login/Register</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+      <!-- banner start -->
+      <section
+        id="banner"
+        class="pt-24 pb-10 xl:pt-38 xl:pb-20"
+        data-aos="fade-in"
+        data-aos-duration="1000"
+      >
+        <div
+          class="max-w-[1440px] mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-7"
+        >
+          <div
+            class="w-full lg:w-1/2 flex flex-col items-start justify-center text-left order-2 lg:order-1"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <h3
+              class="text-space-grotesk text-lg lg:text-2xl xl:text-3xl font-medium"
+            >
+              Global Network Acceleration Service
+            </h3>
+            <h1
+              class="text-space-grotesk text-3xl lg:text-4xl xl:text-6xl font-bold mt-2 mb-4 max-w-[700px]"
+            >
+              use -<span class="text-primary">Blue apricot cloud</span>- Start
+              your internet trip
+            </h1>
+            <p class="text-gray text-base lg:text-lg xl:text-xl mb-7">
+              Obtain network acceleration services interconnected with hundreds
+              of content providers worldwide Up to 3000Mbps One-line access
+              capability
+            </p>
+            <a
+              href="#"
+              class="bg-primary text-white px-5 py-2 rounded-full border-[2px] border-primary hover:bg-transparent hover:text-primary transition-colors duration-300 text-space-grotesk font-medium text-lg"
+              >Get Started</a
+            >
+          </div>
+          <div
+            class="w-full lg:w-1/2 flex items-center justify-center xl:justify-end order-1 lg:order-2"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <div class="max-w-[460px] xl:max-w-[560px] rounded-2xl">
+              <img
+                src="./img/Leonardo_Phoenix_09_A_stylized_digital_illustration_of_a_winte_2.webp"
+                alt=""
+                class="rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- social start -->
+      <section
+        id="introduction"
+        class="bg-secondary py-16"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="max-w-[1130px] mx-auto px-4">
+          <div
+            class="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-5 gap-4 justify-center items-center max-w-[400px] lg:max-w-[900px] mx-auto"
+          >
+            <!-- Icon Item -->
+            <div
+              class="w-full max-w-[80px] md:max-w-[120px] mx-auto aspect-square bg-primary/10 rounded-lg flex items-center justify-center transition duration-300 ease-in-out hover:scale-105 lg:hover:scale-110"
+            >
+              <i
+                class="ri-twitter-x-line text-3xl xl:text-5xl text-primary"
+              ></i>
+            </div>
+
+            <div
+              class="w-full max-w-[80px] md:max-w-[120px] mx-auto aspect-square bg-primary/10 rounded-lg flex items-center justify-center transition duration-300 ease-in-out hover:scale-105 lg:hover:scale-110"
+            >
+              <i class="ri-youtube-fill text-3xl xl:text-5xl text-primary"></i>
+            </div>
+
+            <div
+              class="w-full max-w-[80px] md:max-w-[120px] mx-auto aspect-square bg-primary/10 rounded-lg flex items-center justify-center transition duration-300 ease-in-out hover:scale-105 lg:hover:scale-110"
+            >
+              <i
+                class="ri-pinterest-fill text-3xl xl:text-5xl text-primary"
+              ></i>
+            </div>
+
+            <div
+              class="w-full max-w-[80px] md:max-w-[120px] mx-auto aspect-square bg-primary/10 rounded-lg flex items-center justify-center transition duration-300 ease-in-out hover:scale-105 lg:hover:scale-110"
+            >
+              <i
+                class="ri-wordpress-fill text-3xl xl:text-5xl text-primary"
+              ></i>
+            </div>
+
+            <div
+              class="w-full max-w-[80px] md:max-w-[120px] mx-auto aspect-square bg-primary/10 rounded-lg flex items-center justify-center transition duration-300 ease-in-out hover:scale-105 lg:hover:scale-110"
+            >
+              <i class="ri-behance-fill text-3xl xl:text-5xl text-primary"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- introduction start -->
+      <section
+        id="introduction"
+        class="py-10 xl:py-20"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div
+          class="max-w-[1280px] mx-auto px-4 flex flex-col justify-center items-center space-y-6 md:space-y-8"
+        >
+          <h2
+            class="text-[26px] lg:text-3xl xl:text-5xl font-bold text-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            Introduction
+          </h2>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 2xl:gap-6"
+          >
+            <!-- items 1 -->
+            <div
+              class="flex flex-col items-center justify-center rounded-lg shadow-md p-6 bg-primary/5 border-[2px] border-primary/10"
+              data-aos="fade-up"
+              data-aos-duration="1600"
+            >
+              <!-- img -->
+              <div>
+                <img src="./img/media.webp" alt="" class="w-[75%] lg:w-[65%] mx-auto" />
+              </div>
+              <!-- content -->
+              <div class="mt-6">
+                <h3 class="text-xl lg:text-2xl font-bold text-dark">
+                  Unlock Flow Media Service
+                </h3>
+                <h4 class="text-base text-dark font-semibold mt-1 mb-3 lg:mb-4">
+                  You can watch all kinds of video platforms
+                </h4>
+                <p class="text-sm text-gray">
+                  Lifting geographical restrictions, you can watch Netflix,
+                  Hulu, HBO, DisneyPlus, TVB, AbemaTV, DAZN and other streaming
+                  media content smoothly in any part of the world, so that you
+                  can freely access your favorite content.
+                </p>
+              </div>
+            </div>
+            <!-- items 2 -->
+            <div
+              class="flex flex-col items-center justify-center rounded-lg shadow-md p-6 bg-primary/5 border-[2px] border-primary/10"
+              data-aos="fade-up"
+              data-aos-duration="1700"
+            >
+              <!-- img -->
+              <div>
+                <img
+                  src="./img/launch.webp"
+                  alt=""
+                  class="w-[75%] lg:w-[65%] mx-auto"
+                />
+              </div>
+              <!-- content -->
+              <div class="mt-6">
+                <h3 class="text-xl lg:text-2xl font-bold text-dark">
+                  Unlock Flow Media Service
+                </h3>
+                <h4 class="text-base text-dark font-semibold mt-1 mb-3 lg:mb-4">
+                  You can watch all kinds of video platforms
+                </h4>
+                <p class="text-sm text-gray">
+                  Lifting geographical restrictions, you can watch Netflix,
+                  Hulu, HBO, DisneyPlus, TVB, AbemaTV, DAZN and other streaming
+                  media content smoothly in any part of the world, so that you
+                  can freely access your favorite content.
+                </p>
+              </div>
+            </div>
+            <!-- items 3 -->
+            <div
+              class="flex flex-col items-center justify-center rounded-lg shadow-md p-6 bg-primary/5 border-[2px] border-primary/10"
+              data-aos="fade-up"
+              data-aos-duration="1700"
+            >
+              <!-- img -->
+              <div>
+                <img
+                  src="./img/upload.webp"
+                  alt=""
+                  class="w-[75%] lg:w-[65%] mx-auto"
+                />
+              </div>
+              <!-- content -->
+              <div class="mt-6">
+                <h3 class="text-xl lg:text-2xl font-bold text-dark">
+                  Unlock Flow Media Service
+                </h3>
+                <h4 class="text-base text-dark font-semibold mt-1 mb-3 lg:mb-4">
+                  You can watch all kinds of video platforms
+                </h4>
+                <p class="text-sm text-gray">
+                  Lifting geographical restrictions, you can watch Netflix,
+                  Hulu, HBO, DisneyPlus, TVB, AbemaTV, DAZN and other streaming
+                  media content smoothly in any part of the world, so that you
+                  can freely access your favorite content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- support  start -->
+      <section
+        id="support"
+        class="py-10 xl:py-20 bg-secondary"
+        data-aos="fade-in"
+        data-aos-duration="1000"
+      >
+        <div class="max-w-[1440px] mx-auto px-4">
+          <h2
+            class="text-[26px] lg:text-3xl xl:text-5xl font-bold text-center md:leading-14 mx-auto space-y-6 md:space-y-8"
+          >
+            Support mainstream subscription software
+          </h2>
+          <div class="relative">
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 justify-between items-center gap-8 lg:gap-6 mt-10 max-w-[1280px] mx-auto"
+            >
+              <!-- items 1 -->
+              <div
+                class="flex flex-col items-center justify-center rounded-xl p-6 border-[2px] border-primary/10 md:max-w-[350px] w-full h-full bg-secondary z-20 mx-auto"
+              >
+                <!-- img -->
+                <div class="max-w-24 p-5 bg-primary/10 rounded-2xl">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="38"
+                    height="38"
+                    viewBox="0 0 48 48"
+                    id="Layer_2"
+                    data-name="Layer 2"
+                  >
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: none;
+                          stroke: #0066ff;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                        }
+                      </style>
+                    </defs>
+                    <path
+                      class="cls-1"
+                      d="M40.53,6.78a.26.26,0,0,1,.22.31L34.36,35.26a.22.22,0,0,1-.28.16l-13.64-4.3a.52.52,0,0,1-.25-.83l11.6-14.17L31.68,16,15.61,29.84a.58.58,0,0,1-.54.09L3.87,25.52a.21.21,0,0,1,0-.38L40.39,6.81l.14,0Zm-20.4,27,6.69-.69-6.41,8a.28.28,0,0,1-.5-.18l.17-10.47"
+                    />
+                  </svg>
+                </div>
+                <!-- content -->
+                <div class="mt-6 text-center">
+                  <h3 class="text-xl lg:text-2xl font-bold text-dark mb-2">
+                    Shadowrocket
+                  </h3>
+                  <p class="text-sm text-gray">
+                    Applicable to iPhone/iPad's rule-based agency utility
+                    client.
+                  </p>
+                </div>
+              </div>
+              <!-- items 2 -->
+              <div
+                class="flex flex-col items-center justify-center rounded-xl p-6 border-[2px] border-primary/10 md:max-w-[350px] w-full h-full bg-secondary z-20 mx-auto"
+              >
+                <!-- img -->
+                <div class="max-w-24 p-5 bg-primary/10 rounded-2xl">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="38px"
+                    height="38px"
+                    viewBox="0 0 48 48"
+                  >
+                    <defs>
+                      <style>
+                        .a {
+                          fill: none;
+                          stroke: #0066ff;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                        }
+                      </style>
+                    </defs>
+                    <path
+                      class="a"
+                      d="M11.1341,15.0463c.5859-2.1586,2.7622-7.5618,4.3822-7.5618,1.9441,0,4.1041,4.9142,4.1041,4.9142"
+                    />
+                    <line
+                      class="a"
+                      x1="4.662"
+                      y1="24.819"
+                      x2="9.5581"
+                      y2="26.4571"
+                    />
+                    <line
+                      class="a"
+                      x1="5.6792"
+                      y1="34.5894"
+                      x2="9.7381"
+                      y2="32.0912"
+                    />
+                    <line
+                      class="a"
+                      x1="4.5"
+                      y1="29.4632"
+                      x2="9.7381"
+                      y2="29.4632"
+                    />
+                    <circle class="a" cx="17.1904" cy="24.9405" r="2.0926" />
+                    <path
+                      class="a"
+                      d="M24,40.5155h3.7856c11.8443,0,12.7083-9.2523,12.7083-12.7084V24.3585c0-11.1528-8.4962-11.96-13.2484-11.96h-6.491c-4.7522,0-13.2484.807-13.2484,11.96v3.4486c0,3.4561.864,12.7084,12.7083,12.7084Z"
+                    />
+                    <path
+                      class="a"
+                      d="M36.8659,15.0463c-.5859-2.1586-2.7622-7.5618-4.3822-7.5618-1.9441,0-4.1041,4.9142-4.1041,4.9142"
+                    />
+                    <line
+                      class="a"
+                      x1="43.338"
+                      y1="24.819"
+                      x2="38.4419"
+                      y2="26.4571"
+                    />
+                    <line
+                      class="a"
+                      x1="42.3208"
+                      y1="34.5894"
+                      x2="38.2619"
+                      y2="32.0912"
+                    />
+                    <line
+                      class="a"
+                      x1="43.5"
+                      y1="29.4632"
+                      x2="38.2619"
+                      y2="29.4632"
+                    />
+                    <circle class="a" cx="30.8096" cy="24.9405" r="2.0926" />
+                    <path
+                      class="a"
+                      d="M24.6157,29.9768l1.72-2.2862a.77.77,0,0,0-.6156-1.2335H22.28a.77.77,0,0,0-.6156,1.2335l1.72,2.2862A.77.77,0,0,0,24.6157,29.9768Z"
+                    />
+                  </svg>
+                </div>
+                <!-- content -->
+                <div class="mt-6 text-center">
+                  <h3 class="text-xl lg:text-2xl font-bold text-dark mb-2">
+                    ClashVerge
+                  </h3>
+                  <p class="text-sm text-gray">
+                    ClashVerge is the client of proxy software under the MacOS
+                    system, the Windows system
+                  </p>
+                </div>
+              </div>
+              <!-- items 3 -->
+              <div
+                class="flex flex-col items-center justify-center rounded-xl p-6 border-[2px] border-primary/10 md:max-w-[350px] w-full h-full bg-secondary z-20 mx-auto"
+              >
+                <!-- img -->
+                <div class="max-w-24 p-5 bg-primary/10 rounded-2xl">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="38px"
+                    height="38px"
+                    viewBox="0 0 48 48"
+                  >
+                    <defs>
+                      <style>
+                        .a,
+                        .b {
+                          fill: none;
+                          stroke: #0066ff;
+                          stroke-linecap: round;
+                        }
+                        .a {
+                          stroke-linejoin: round;
+                        }
+                        .b {
+                          stroke-miterlimit: 5.7143;
+                        }
+                      </style>
+                    </defs>
+                    <path
+                      class="a"
+                      d="M27.19,42.5a89.0444,89.0444,0,0,1-14.6813-1.5725S13.94,12.3721,17.9209,5.5357c-.13-.297,2.9919,1.2125,4.4218,6.2665a25.5569,25.5569,0,0,1,4.8471-.47"
+                    />
+                    <ellipse
+                      class="a"
+                      cx="21.2404"
+                      cy="20.3089"
+                      rx="1.6708"
+                      ry="2.1301"
+                    />
+                    <path
+                      class="a"
+                      d="M27.19,42.5a89.0444,89.0444,0,0,0,14.6813-1.5725S40.44,12.3721,36.4583,5.5357c.03-.2006-3.59,1.7549-4.4218,6.2665a25.5582,25.5582,0,0,0-4.8471-.47"
+                    />
+                    <ellipse
+                      class="a"
+                      cx="33.1398"
+                      cy="20.3089"
+                      rx="1.6708"
+                      ry="2.1301"
+                    />
+                    <path
+                      class="b"
+                      d="M12.5083,40.927C10.5777,40.6,7.56,40.6178,6.4685,37.44c-1.0674-3.107.4377-6.6708,3.7411-7.0453"
+                    />
+                    <path
+                      class="b"
+                      d="M25.4634,26.3872a1.4666,1.4666,0,0,0,1.4726-1.4725"
+                    />
+                    <path
+                      class="b"
+                      d="M28.4091,26.3872a1.4666,1.4666,0,0,1-1.4726-1.4725"
+                    />
+                  </svg>
+                </div>
+                <!-- content -->
+                <div class="mt-6 text-center">
+                  <h3 class="text-xl lg:text-2xl font-bold text-dark mb-2">
+                    Clash for Android
+                  </h3>
+                  <p class="text-sm text-gray">
+                    One applies to Android's clash client.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- line -->
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[70%] w-[1px] border-l border-dashed border-primary md:h-[1px] md:w-[70%] md:border-l-0 md:border-t"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="max-w-[1440px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center mt-10 xl:mt-20 space-y-6 md:space-y-0"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <div class="w-full lg:w-1/2">
+            <div>
+              <img
+                src="./img/programming.webp"
+                alt=""
+                class="w-[80%] md:w-[60%] mx-auto"
+              />
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 flex flex-col text-start">
+            <h3 class="text-xl lg:text-3xl font-bold text-dark">
+              All your equipment will be protected
+            </h3>
+            <p class="text-base text-gray mt-3 max-w-[600px]">
+              Blue cloud Supported all mainstream equipment on the market to
+              ensure that privacy data protection can be provided to you on
+              multi-platform equipment. You can enjoy at all times Windows, Mac,
+              iOS, Android, Android TV, Linux beautiful and unharmed client, in
+              order to give you a perfect experience, connect to Hongxingyun
+              Just need a switch. Using the red apricot cloud, multiple devices
+              access a safe and unlimited network, only a moment away.
+            </p>
+            <div
+              class="grid grid-cols-2 md:grid-cols-3 gap-5 max-w-[600px] mt-6 lg:mt-7"
+            >
+              <!-- item-1 -->
+              <div
+                class="inline-flex flex-row items-center gap-3 bg-primary/10 rounded-lg p-2"
+              >
+                <div
+                  class="w-9 h-9 flex items-center justify-center bg-primary rounded-md"
+                >
+                  <i class="ri-windows-fill text-white text-2xl"></i>
+                </div>
+                <span class="text-base lg:text-lg font-medium">Windows</span>
+              </div>
+              <!-- item-2 -->
+              <div
+                class="inline-flex flex-row items-center gap-3 bg-primary/10 rounded-lg p-2"
+              >
+                <div
+                  class="w-9 h-9 flex items-center justify-center bg-primary rounded-md"
+                >
+                  <i class="ri-finder-fill text-white text-2xl"></i>
+                </div>
+                <span class="text-base lg:text-lg font-medium">macOS</span>
+              </div>
+              <!-- item-3 -->
+              <div
+                class="inline-flex flex-row items-center gap-3 bg-primary/10 rounded-lg p-2"
+              >
+                <div
+                  class="w-9 h-9 flex items-center justify-center bg-primary rounded-md"
+                >
+                  <i class="ri-ubuntu-fill text-white text-2xl"></i>
+                </div>
+                <span class="text-base lg:text-lg font-medium">Linux</span>
+              </div>
+              <!-- item-4 -->
+              <div
+                class="inline-flex flex-row items-center gap-3 bg-primary/10 rounded-lg p-2"
+              >
+                <div
+                  class="w-9 h-9 flex items-center justify-center bg-primary rounded-md"
+                >
+                  <i class="ri-apple-fill text-white text-2xl"></i>
+                </div>
+                <span class="text-base lg:text-lg font-medium">Apple</span>
+              </div>
+              <!-- item-5 -->
+              <div
+                class="inline-flex flex-row items-center gap-3 bg-primary/10 rounded-lg p-2"
+              >
+                <div
+                  class="w-9 h-9 flex items-center justify-center bg-primary rounded-md"
+                >
+                  <i class="ri-android-fill text-white text-2xl"></i>
+                </div>
+                <span class="text-base lg:text-lg font-medium">Android</span>
+              </div>
+              <!-- item-6 -->
+              <div
+                class="inline-flex flex-row items-center gap-3 bg-primary/10 rounded-lg p-2"
+              >
+                <div
+                  class="w-9 h-9 flex items-center justify-center bg-primary rounded-md"
+                >
+                  <i class="ri-tv-2-fill text-white text-2xl"></i>
+                </div>
+                <span class="text-base lg:text-lg font-medium">TV OS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services start -->
+      <section
+        id="services"
+        class="py-10 xl:py-20"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="max-w-[1440px] mx-auto px-4 space-y-6 md:space-y-9">
+          <h2 class="text-[26px] lg:text-3xl xl:text-5xl font-bold text-center">
+            Service content
+          </h2>
+          <div class="flex flex-col lg:flex-row items-center justify-center">
+            <div
+              class="w-full lg:w-1/2"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <!-- items 1 -->
+                <div
+                  class="flex flex-col items-center lg:items-start rounded-lg shadow-md p-6 bg-blue-gradient border-[2px] border-primary/5"
+                >
+                  <!-- img -->
+                  <div
+                    class="w-13 h-13 flex items-center justify-center bg-primary/20 rounded-md"
+                  >
+                    <i
+                      class="ri-flashlight-fill text-primary text-2xl lg:text-3xl"
+                    ></i>
+                  </div>
+                  <!-- content -->
+                  <div class="mt-6 text-center lg:text-start">
+                    <h3 class="text-lg lg:text-xl font-bold text-dark mb-2">
+                      High-speed stable line
+                    </h3>
+                    <p class="text-sm text-gray">
+                      High-speed transmission, extreme bandwidth experience
+                      Global cross-regional low-delayed broadband data
+                      transmission
+                    </p>
+                  </div>
+                </div>
+                <!-- items 2 -->
+                <div
+                  class="flex flex-col items-center lg:items-start rounded-lg shadow-md p-6 bg-blue-gradient border-[2px] border-primary/5"
+                >
+                  <!-- img -->
+                  <div
+                    class="w-13 h-13 flex items-center justify-center bg-primary/20 rounded-md"
+                  >
+                    <i
+                      class="ri-settings-5-fill text-primary text-2xl lg:text-3xl"
+                    ></i>
+                  </div>
+                  <!-- content -->
+                  <div class="mt-6 text-center lg:text-start">
+                    <h3 class="text-lg lg:text-xl font-bold text-dark mb-2">
+                      Simple operation configuration
+                    </h3>
+                    <p class="text-sm text-gray">
+                      Full-scale customer support Simple operation configuration
+                      Simple and easy to use suitable customer end
+                    </p>
+                  </div>
+                </div>
+                <!-- items 3 -->
+                <div
+                  class="flex flex-col items-center lg:items-start rounded-lg shadow-md p-6 bg-blue-gradient border-[2px] border-primary/5"
+                >
+                  <!-- img -->
+                  <div
+                    class="w-13 h-13 flex items-center justify-center bg-primary/20 rounded-md"
+                  >
+                    <i
+                      class="ri-lightbulb-fill text-primary text-2xl lg:text-3xl"
+                    ></i>
+                  </div>
+                  <!-- content -->
+                  <div class="mt-6 text-center lg:text-start">
+                    <h3 class="text-lg lg:text-xl font-bold text-dark mb-2">
+                      Operator Smart Optimization
+                    </h3>
+                    <p class="text-sm text-gray">
+                      Select high-quality operators from entrance to landing
+                      Multi-layer line optimization, load equilibrium setting
+                    </p>
+                  </div>
+                </div>
+                <!-- items 4 -->
+                <div
+                  class="flex flex-col items-center lg:items-start rounded-lg shadow-md p-6 bg-blue-gradient border-[2px] border-primary/5"
+                >
+                  <!-- img -->
+                  <div
+                    class="w-13 h-13 flex items-center justify-center bg-primary/20 rounded-md"
+                  >
+                    <i
+                      class="ri-group-fill text-primary text-2xl lg:text-3xl"
+                    ></i>
+                  </div>
+                  <!-- content -->
+                  <div class="mt-6 text-center lg:text-start">
+                    <h3 class="text-lg lg:text-xl font-bold text-dark mb-2">
+                      Enrich community services
+                    </h3>
+                    <p class="text-sm text-gray">
+                      Integrate community system Improve learning documents
+                      Multi-user communication platform, rich content
+                      documentation
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-1/2 lg:block hidden"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
+              <div>
+                <img
+                  src="./img/chat.webp"
+                  alt=""
+                  class="w-[80%] md:w-[60%] mx-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- pricing start -->
+      <section
+        id="pricing"
+        class="py-10 xl:py-20 bg-secondary"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="max-w-[1440px] mx-auto px-4 space-y-6 md:space-y-9">
+          <h2 class="text-[26px] lg:text-3xl xl:text-5xl font-bold text-center">
+            Pricing
+          </h2>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1200px] mx-auto"
+          >
+            <!-- items 1 -->
+            <div
+              class="flex flex-col items-center justify-center rounded-2xl shadow-md px-6 py-8 bg-white"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              <!-- content -->
+              <div class="">
+                <h4
+                  class="text-lg lg:text-2xl text-dark font-semibold mt-1 mb-3 lg:mb-4"
+                >
+                  Lightweight · 222G/month
+                </h4>
+                <h3 class="text-xl lg:text-5xl font-bold text-dark">
+                  ¥15/<span class="text-lg text-gray">month</span>
+                </h3>
+
+                <ul class="space-y-2 mt-6">
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-primary"></i>
+                    <span class="text-base text-gray">Flow: 222 GB/month</span>
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-primary"></i>
+                    <span class="text-base text-gray">Bandwidth: 300Mbps</span>
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-primary"></i>
+                    <span class="text-base text-gray"
+                      >Equipment: Unrestricted, family sharing</span
+                    >
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-primary"></i>
+                    <span class="text-base text-gray"
+                      >Media: Unlock Flow Media</span
+                    >
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-primary"></i>
+                    <span class="text-base text-gray"
+                      >Transmission: Simple Transit Tunnel</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- items 2 -->
+            <div
+              class="flex flex-col items-center justify-center rounded-2xl shadow-md px-6 py-8 bg-primary relative"
+              data-aos="fade-up"
+              data-aos-duration="1700"
+            >
+              <span
+                class="text-[10px] md:text-sm text-dark font-semibold absolute top-3 right-3 md:-top-3 md:left-1/2 md:-translate-x-1/2 z-20 bg-green py-1 px-2 rounded-full inline-flex items-center justify-center"
+              >
+                Most Popular
+              </span>
+
+              <!-- content -->
+              <div class="">
+                <h4
+                  class="text-lg lg:text-2xl text-white font-semibold mt-1 mb-3 lg:mb-4"
+                >
+                  Lightweight · 222G/month
+                </h4>
+                <h3 class="text-xl lg:text-5xl font-bold text-white">
+                  ¥15/<span class="text-lg text-white">month</span>
+                </h3>
+
+                <ul class="space-y-2 mt-6">
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-green"></i>
+                    <span class="text-base text-white">Flow: 222 GB/month</span>
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-green"></i>
+                    <span class="text-base text-white">Bandwidth: 300Mbps</span>
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-green"></i>
+                    <span class="text-base text-white"
+                      >Equipment: Unrestricted, family sharing</span
+                    >
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-green"></i>
+                    <span class="text-base text-white"
+                      >Media: Unlock Flow Media</span
+                    >
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-green"></i>
+                    <span class="text-base text-white"
+                      >Transmission: Simple Transit Tunnel</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- items 3 -->
+            <div
+              class="flex flex-col items-center justify-center rounded-2xl shadow-md px-6 py-8 bg-white"
+              data-aos="fade-up"
+              data-aos-duration="1900"
+            >
+              <!-- content -->
+              <div class="">
+                <h4
+                  class="text-lg lg:text-2xl text-dark font-semibold mt-1 mb-3 lg:mb-4"
+                >
+                  Lightweight · 222G/month
+                </h4>
+                <h3 class="text-xl lg:text-5xl font-bold text-dark">
+                  ¥15/<span class="text-lg text-gray">month</span>
+                </h3>
+
+                <ul class="space-y-2 mt-6">
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-primary"></i>
+                    <span class="text-base text-gray">Flow: 222 GB/month</span>
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-primary"></i>
+                    <span class="text-base text-gray">Bandwidth: 300Mbps</span>
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-primary"></i>
+                    <span class="text-base text-gray"
+                      >Equipment: Unrestricted, family sharing</span
+                    >
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-primary"></i>
+                    <span class="text-base text-gray"
+                      >Media: Unlock Flow Media</span
+                    >
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                    <i class="ri-circle-fill text-[10px] text-primary"></i>
+                    <span class="text-base text-gray"
+                      >Transmission: Simple Transit Tunnel</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonials start -->
+      <section
+        id="testimonials"
+        class="py-10 xl:py-20 overflow-x-hidden"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div
+          class="max-w-[1440px] mx-auto px-4 space-y-6 md:space-y-9 flex flex-col justify-center items-center"
+        >
+          <h2
+            class="text-2xl lg:text-4xl font-bold text-dark mt-1 mb-3 lg:mb-4"
+          >
+            Testimonials
+          </h2>
+          <!-- Splide Carousel -->
+          <div
+            class="splide w-full"
+            role="group"
+            aria-label="Testimonials Carousel"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <!-- Testimonial 1: Sarah Chen -->
+                <li class="splide__slide p-4">
+                  <div
+                    class="bg-blue-gradient rounded-xl shadow-lg p-6 md:p-8 flex flex-col h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+                  >
+                    <div class="flex items-center mb-6">
+                      <img
+                        src="https://placehold.co/60x60/a0c49d/ffffff?text=SC"
+                        alt="Sarah Chen"
+                        class="w-14 h-14 rounded-full mr-4 object-cover border-2 border-blue-200 shadow-sm"
+                      />
+                      <div>
+                        <p class="font-semibold text-lg text-gray-900">
+                          Sarah Chen
+                        </p>
+                        <p class="text-sm text-gray-600">Tech Executive</p>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-700 leading-relaxed text-base flex-grow"
+                    >
+                      "NetflyCloud has been essential for our remote team. Fast,
+                      reliable, and incredibly easy to use."
+                    </p>
+                  </div>
+                </li>
+
+                <!-- Testimonial 2: Michael Rodriguez -->
+                <li class="splide__slide p-4">
+                  <div
+                    class="bg-blue-gradient rounded-xl shadow-lg p-6 md:p-8 flex flex-col h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+                  >
+                    <div class="flex items-center mb-6">
+                      <img
+                        src="https://placehold.co/60x60/c4b8aa/ffffff?text=MR"
+                        alt="Michael Rodriguez"
+                        class="w-14 h-14 rounded-full mr-4 object-cover border-2 border-blue-200 shadow-sm"
+                      />
+                      <div>
+                        <p class="font-semibold text-lg text-gray-900">
+                          Michael Rodriguez
+                        </p>
+                        <p class="text-sm text-gray-600">Digital Nomad</p>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-700 leading-relaxed text-base flex-grow"
+                    >
+                      "Works flawlessly across all my devices. The speed is
+                      incredible even on public WiFi."
+                    </p>
+                  </div>
+                </li>
+
+                <!-- Testimonial 3: Emma Thompson -->
+                <li class="splide__slide p-4">
+                  <div
+                    class="bg-blue-gradient rounded-xl shadow-lg p-6 md:p-8 flex flex-col h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+                  >
+                    <div class="flex items-center mb-6">
+                      <img
+                        src="https://placehold.co/60x60/d4a373/ffffff?text=ET"
+                        alt="Emma Thompson"
+                        class="w-14 h-14 rounded-full mr-4 object-cover border-2 border-blue-200 shadow-sm"
+                      />
+                      <div>
+                        <p class="font-semibold text-lg text-gray-900">
+                          Emma Thompson
+                        </p>
+                        <p class="text-sm text-gray-600">Content Creator</p>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-700 leading-relaxed text-base flex-grow"
+                    >
+                      "Finally a VPN that doesn't slow down my uploads. Perfect
+                      for content creators!"
+                    </p>
+                  </div>
+                </li>
+
+                <!-- Testimonial 4: Alex Johnson (Example) -->
+                <li class="splide__slide p-4">
+                  <div
+                    class="bg-blue-gradient rounded-xl shadow-lg p-6 md:p-8 flex flex-col h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+                  >
+                    <div class="flex items-center mb-6">
+                      <img
+                        src="https://placehold.co/60x60/8ecae6/ffffff?text=AJ"
+                        alt="Alex Johnson"
+                        class="w-14 h-14 rounded-full mr-4 object-cover border-2 border-blue-200 shadow-sm"
+                      />
+                      <div>
+                        <p class="font-semibold text-lg text-gray-900">
+                          Alex Johnson
+                        </p>
+                        <p class="text-sm text-gray-600">Freelance Designer</p>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-700 leading-relaxed text-base flex-grow"
+                    >
+                      "The customer support is top-notch! Any issue I've had was
+                      resolved quickly and efficiently. Highly recommended!"
+                    </p>
+                  </div>
+                </li>
+
+                <!-- Testimonial 5: Emily White (Example) -->
+                <li class="splide__slide p-4">
+                  <div
+                    class="bg-blue-gradient rounded-xl shadow-lg p-6 md:p-8 flex flex-col h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+                  >
+                    <div class="flex items-center mb-6">
+                      <img
+                        src="https://placehold.co/60x60/b5e4a0/ffffff?text=EW"
+                        alt="Emily White"
+                        class="w-14 h-14 rounded-full mr-4 object-cover border-2 border-blue-200 shadow-sm"
+                      />
+                      <div>
+                        <p class="font-semibold text-lg text-gray-900">
+                          Emily White
+                        </p>
+                        <p class="text-sm text-gray-600">
+                          Small Business Owner
+                        </p>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-700 leading-relaxed text-base flex-grow"
+                    >
+                      "Security is my main concern, and NetflyCloud provides
+                      peace of mind. Intuitive interface makes it a breeze to
+                      use."
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+    <!-- footer start -->
+    <footer class="bg-accent">
+      <div
+        class="container mx-auto px-4 py-8 xl:py-14 flex flex-col justify-center items-center"
+      >
+        <a
+          href="./index.html"
+          class="text-lg xl:text-2xl text-space-grotesk font-bold flex items-center gap-2"
+          ><div
+            class="bg-primary p-2 max-w-10 max-h-10 rounded-[10px] inline-flex items-center justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="fill-white inline-block w-5 h-5"
+            >
+              <path
+                d="M17 7C13.5705 7 10.6449 9.15804 9.50734 12.1903L11.3805 12.8927C12.2337 10.6185 14.4278 9 17 9C17.6983 9 18.3687 9.11928 18.992 9.33857C21.3265 10.16 23 12.3846 23 15C23 18.3137 20.3137 21 17 21H7C3.68629 21 1 18.3137 1 15C1 12.3846 2.67346 10.16 5.00804 9.33857C5.0027 9.22639 5 9.11351 5 9C5 5.13401 8.13401 2 12 2C15.242 2 17.9693 4.20399 18.7652 7.19539C18.1973 7.0675 17.6065 7 17 7Z"
+              ></path>
+            </svg>
+          </div>
+          Cloud</a
+        >
+        <p class="text-center text-base text-gray mt-5">
+          Secure your digital life with advanced VPN and cloud technology.
+        </p>
+        <ul class="flex flex-row gap-4 mt-6 mb-9">
+          <li>
+            <a
+              href="#"
+              class="bg-primary/20 p-2 flex justify-center items-center rounded-lg hover:bg-primary group max-w-10 max-h-10"
+              ><i
+                class="ri-facebook-circle-fill text-primary group-hover:text-white transition-colors ease-in-out duration-300 text-2xl"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="bg-primary/20 p-2 flex justify-center items-center rounded-lg hover:bg-primary group max-w-10 max-h-10"
+              ><i
+                class="ri-youtube-fill text-primary group-hover:text-white transition-colors ease-in-out duration-300 text-2xl"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="bg-primary/20 p-2 flex justify-center items-center rounded-lg hover:bg-primary group max-w-10 max-h-10"
+              ><i
+                class="ri-instagram-fill text-primary group-hover:text-white transition-colors ease-in-out duration-300 text-2xl"
+              ></i
+            ></a>
+          </li>
+        </ul>
+        <p class="text-center text-sm text-gray-600">
+          &copy; <span id="year"></span> Cloud. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- scroll to top start -->
+    <button
+      id="scrollToTopBtn"
+      class="fixed bottom-6 right-6 hidden w-10 h-10 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 z-50 flex items-center justify-center cursor-pointer"
+      aria-label="Scroll to top"
+    >
+      <i class="ri-arrow-up-line text-xl"></i>
+    </button>
+
+    <!-- scroll to top end -->
+    <!-- js -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Splide.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.0/dist/js/splide.min.js"></script>
+
+    <!-- Initialize Splide -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide", {
+          type: "loop",
+          perPage: 3,
+          perMove: 1,
+          gap: "10px" /* Equivalent to spaceBetween in Tailwind/Swiper */,
+          autoplay: true,
+          interval: 5000,
+          pauseOnHover: false, // Continue autoplay on hover
+          breakpoints: {
+            640: {
+              perPage: 1,
+              gap: "10px" /* Adjust gap for smaller screens */,
+            },
+            768: {
+              perPage: 2,
+              gap: "10px" /* Adjust gap for medium screens */,
+            },
+            1024: {
+              perPage: 2,
+              gap: "10px",
+            },
+          },
+        });
+        splide.mount();
+      });
+    </script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script>
+      const btn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      const navbar = document.getElementById("navbar");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        navbar.classList.toggle("shadow-md");
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <script>
+      const lenis = new Lenis({
+        duration: 1.2, // Scroll duration
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function for smooth transitions
+        direction: "vertical", // Scroll direction: vertical or horizontal
+        gestureDirection: "vertical", // Gesture direction: vertical, horizontal, or both
+        smooth: true, // Enable smooth scrolling
+        mouseMultiplier: 1, // Mouse scroll speed multiplier
+        smoothTouch: false, // Disable smooth scrolling for touch devices
+        touchMultiplier: 2, // Touch scroll speed multiplier
+        infinite: false, // Disable infinite scroll
+      });
+
+      // Optional: Listen to scroll events
+      lenis.on("scroll", ({ scroll, limit, velocity, direction, progress }) => {
+        console.log({ scroll, limit, velocity, direction, progress });
+      });
+
+      // Animation frame loop function
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+    </script>
+    <script>
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // Show/hide button on scroll
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          scrollToTopBtn.classList.remove("hidden");
+        } else {
+          scrollToTopBtn.classList.add("hidden");
+        }
+      });
+
+      // Scroll to top on click
+      scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
